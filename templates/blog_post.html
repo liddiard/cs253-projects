@@ -1,0 +1,9 @@
+{% extends "blog_base.html" %}
+
+{% block content %}
+
+    <h2>{{post.title}}</h2>
+    <span class="datetime">{{post.created.strftime('%Y-%m-%d')}}</span>
+    <p class="body">{{post.body}}</p>
+
+{% endblock %}

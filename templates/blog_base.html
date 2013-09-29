@@ -1,0 +1,39 @@
+{% block header %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bob Loblaw's Law Blog</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            padding: 0 0 0 1em;
+        }
+        textarea {
+            display: block;
+            width: 300px;
+            height: 200px;
+        }
+        .post {
+            margin: 1em 0 1em 0;
+        }
+        .datetime {
+            color: #666;
+        }
+        .fyi {
+            color: #666;
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+{% endblock %}
+
+    <h1>Bob Loblaw&rsquo;s Law Blog</h1>
+    {% block content %}{% endblock %}
+
+{% block footer %}
+<span class="fyi">Queried {{last_queried}} seconds ago</span>
+</body>
+</html>
+{% endblock %}

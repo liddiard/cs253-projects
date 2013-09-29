@@ -1,0 +1,12 @@
+{% extends "accounts_base.html" %}
+
+{% block content %}
+<h1>Sign Up</h1>
+<form method="post">
+	<input class="register" type="text" name="username" placeholder="username"><div class="text-error">{{i_username}}</div>
+	<input class="register" type="password" name="password" placeholder="password"><div class="text-error">{{i_password}}</div>
+	<input class="register" type="password" name="verify" placeholder="verify password"><div class="text-error">{{i_verify}}</div>
+	<input class="register" type="text" name="email" placeholder="email"><div class="text-error">{{i_email}}</div>
+	<input class="register btn btn-primary" type="submit">
+</form>
+{% endblock %}
